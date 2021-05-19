@@ -1,0 +1,16 @@
+title: Fhhfvn
+description: Gcfgg
+template:
+  repo: fhhfvn-template
+  name: fhhfvn
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
